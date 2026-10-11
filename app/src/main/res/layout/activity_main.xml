@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingTop="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selección de Categorías"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <CheckBox
+            android:id="@+id/cbMusica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Música" />
+
+        <CheckBox
+            android:id="@+id/cbCarro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carro" />
+
+        <CheckBox
+            android:id="@+id/cbCalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calle" />
+
+        <CheckBox
+            android:id="@+id/cbPersona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persona" />
+
+        <Button
+            android:id="@+id/btnMostrarImagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualizar Imagen"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:id="@+id/imgDinamica"
+            android:layout_width="220dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/btnVerInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Info Personal" />
+
+        <Button
+            android:id="@+id/btnResumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Resumen" />
+
+        <Button
+            android:id="@+id/btnCompartir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compartir Selecciones" />
+
+        <Button
+            android:id="@+id/btnCambiarFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cambiar Foto Perfil (Galería)" />
+
+    </LinearLayout>
+</ScrollView>
